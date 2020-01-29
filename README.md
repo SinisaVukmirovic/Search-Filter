@@ -1,0 +1,1 @@
+### Practicing jS by building an Search Filter functionality, with filtering DOTA heroes info, from OpenDota API
