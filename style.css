@@ -13,12 +13,14 @@ body {
 	justify-content: center;
 	min-height: 100vh;
 	margin: 0;
+	background-image: url('bg.jpg');
+	background-position: center;
+	background-size: cover;
 }
 
 .container {
-	border: 2px solid crimson;
-	border-radius: 1rem;
-	box-shadow: 2px 2px 10px #000;
+	border: 3px solid crimson;
+	box-shadow: 4px 6px 50px 20px #000;
 	overflow: hidden;
 	width: 30rem;
 }
@@ -30,19 +32,21 @@ body {
 .subtitle {
 	display: inline-block;
 	margin: .5rem 0 1rem;
-    color: #ddd;
-    font-size: 14px;
+    color: #eee;
+    font-size: 1rem;
 }
 
 .header {
 	background-color: crimson;
+	color: #fff;
 	padding: 2rem 1rem;
+	font-size: 1.25rem;
 }
 
 .header input {
 	background-color: rgba(0, 0, 0, 0.3);
     border-radius: 3rem;
-    border: 1px solid #ddd;
+	border: 1px solid #ddd;
     outline: none;
 	color: #fff;
 	font-family: 'Muli', sans-serif;
@@ -55,10 +59,10 @@ body {
     }
 
 .heroes-list {
-	background-color: #333;
+	background-color: #222;
 	list-style-type: none;
 	margin: 0;
-	max-height: 60vh;
+	max-height: 55vh;
 	overflow-y: auto;
 	padding: 0;
 }
@@ -69,7 +73,7 @@ body {
 }
 
 .heroes-list li:not(:last-of-type) {
-	border-bottom: 1px solid #aaa;
+	border-bottom: 1px solid #777;
 }
 
 .heroes-list li.hide {
@@ -90,18 +94,16 @@ body {
 /* Scroll bars styling */
 /* width */
 ::-webkit-scrollbar {
-    width: 3px;
-    background: crimson;
+    width: 6px;
+    background: #333;
 }
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #eee;
+    background: #aaa;
 }
-
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #333; 
+    background: crimson; 
 }
 
 @media only screen and (max-width: 1024px) {
